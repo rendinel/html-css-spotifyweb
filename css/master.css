@@ -1,3 +1,38 @@
+/* utility class */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 1200px;
+  margin:0 auto;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.floatl{
+  float: left;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+/* fine utility */
 .wrapper{
   width: 100vw;
   height: 100vh;
@@ -15,5 +50,4 @@
   height: 100vh;
   width: 70%;
   background-color: blue;
-  float: right;
 }
