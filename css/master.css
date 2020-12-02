@@ -37,17 +37,68 @@
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-color: green;
 }
 
+/* classi navbar lateral */
 .navbarlat{
   height: 100vh;
   width: 30%;
   background-color: red;
 }
 
+.container-flex-navlat{
+  display: flex;
+  height: 100%;
+  background-color: yellow;
+  flex-direction:column;
+}
+
+.cont-logo{
+  height:100px;
+  border: 2px solid red;
+}
+
+.cont-ul{
+  height:600px;
+  border: 2px solid purple;
+}
+
+.cont-appuser{
+  width:100%;
+  height:100px;
+  background-color: green;
+  align-self: flex-end;
+}
+/* fine classi navbar lateral */
+
+/* inizio main */
 .main{
   height: 100vh;
   width: 70%;
   background-color: blue;
+}
+
+.container-flex-main{
+  display: flex;
+  height: 100%;
+  background-color: blue;
+  flex-direction:column;
+}
+
+.cont-navmain{
+  height:100px;
+  border: 2px solid red;
+}
+
+.cont-playlist{
+  height:600px;
+  border: 2px solid purple;
+}
+
+/* fine main */
+
+.footer{
+  width: 100%;
+  height: 90px;
+  background-color: orange;
 }
