@@ -45,9 +45,15 @@
   border: 2px solid red;
 }
 
-.container-flex-navbarlat{
-  display: flex;
-  flex-direction: column;
+.topnavbarlat{
+  height: calc(100% - 80px);
+  background-color:purple;
+  overflow: hidden;
+}
+
+.downnavbarlat{
+  height: 80px;
+  background-color: blue;
 }
 /* fine navbar */
 /* inizio main */
@@ -69,7 +75,7 @@
   border: 2px solid black;
 }
 
-.cont-main-nav{
+.cont-main-playlist{
   width: 100%;
   height: 90%;
   border: 2px solid white;
