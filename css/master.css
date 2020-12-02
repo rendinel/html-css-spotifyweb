@@ -38,18 +38,23 @@
   height: 100vh;
   max-width: 100%;
 }
+/* inizionavbar */
+.cont-navbarlat{
+  width: 20%;
+  height: 100%;
+  border: 2px solid red;
+}
 
+.container-flex-navbarlat{
+  display: flex;
+  flex-direction: column;
+}
+/* fine navbar */
 /* inizio main */
 .main{
   height: calc(100% - 90px);
   overflow: hidden;
   background-color: green;
-}
-
-.cont-navbarlat{
-  width: 20%;
-  height: 100%;
-  border: 2px solid red;
 }
 
 .cont-main{
