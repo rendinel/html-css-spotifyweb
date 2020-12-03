@@ -174,18 +174,21 @@
 
 .cont-main{
   width: calc(100% - 230px);
-  height: 100% ;
+  height: calc(100% - 90px) ;
   border: 2px solid yellow;
+  overflow-y: auto;
 }
 
 .cont-main-nav{
-  width: 100%;
+  width: calc(100% - 230px);
   height: 90px;
   background-color: #080B12;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .button{
@@ -206,7 +209,7 @@
 
 .cont-main-playlist{
   width: 100%;
-  height: 3000px;
+  height: 100%;
   border: 2px solid white;
   overflow-y: auto;
 }
@@ -223,19 +226,21 @@
   margin-right: 15px;
 }
 
-.cont-main-playlist > h2{
+.first-h2{
   margin-left: 15px;
+  margin-top: 50px;
 }
 
 .playlist-section{
   border: 2px solid green;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .generic-item {
-  width: calc(100% / 6) ;
+  width: 247px ;
   height: 270px;
   border: 1px #fff solid;
   margin: 15px;
@@ -246,11 +251,67 @@
   width: 70%;
   height: auto;
 }
+
+.generic-item-2 {
+  width: 247px ;
+  height: 270px;
+  border: 1px #fff solid;
+  margin: 15px;
+  text-align: center;
+}
+
+.generic-item-2 > img{
+  width: 70%;
+  height: auto;
+}
+
+.round-image{
+  width: 171.5px;
+  height: 171.5px;
+  background-image: url("../images/youg.jpeg");
+  margin: 0 auto;
+  border-radius: 100px;
+  background-size: cover;
+}
+
+.round-image-2{
+  width: 171.5px;
+  height: 171.5px;
+  background-image: url("../images/einaudi.jpeg");
+  margin: 0 auto;
+  border-radius: 100px;
+  background-size: cover;
+}
 /* fine main */
 
 /* inizio footer */
 .footer{
   height: 90px;
   background-color: #282828;
+}
+
+.player-left{
+  width: 20%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.player-left > img{
+  width: 15%;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 17px;
+}
+
+.player-center{
+  width: 60%;
+  height: 100%;
+  border: 2px solid green;
+}
+
+.player-right{
+  width: 20%;
+  height: 100%;
+  border: 2px solid red;
 }
 /* fine footer */
