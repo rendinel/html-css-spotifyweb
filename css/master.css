@@ -223,6 +223,24 @@
   display: inline-block;
   margin-right: 15px;
 }
+
+.cont-main-playlist > h2{
+  margin-left: 15px;
+}
+
+.playlist-section{
+  border: 2px solid green;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.generic-item {
+  width: 10px;
+  height: 10px;
+  border: 1px #fff solid;
+  margin: 15px;
+}
 /* fine main */
 
 /* inizio footer */
