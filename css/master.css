@@ -176,7 +176,6 @@
 .cont-main{
   width: calc(100% - 230px);
   height: calc(100% - 90px) ;
-  border: 2px solid yellow;
   overflow-y: auto;
 }
 
@@ -208,12 +207,12 @@
   line-height: 50px;
 }
 
-.cont-main-playlist{
+/* .cont-main-playlist{
   width: 100%;
   height: 100%;
   border: 2px solid white;
   overflow-y: auto;
-}
+} */
 
 .main-content-nav {
   margin-top: 10px;
@@ -230,15 +229,15 @@
 
 .content {
   float: left;
-  width: calc(100% - 230px);
+  width: 100% ;
   height: 100%;
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
   overflow-y: auto;
 }
 
 .first-section {
   display:flex;
-  /* justify-content: center; */
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-left: 15px;
   margin-bottom: 20px;
@@ -258,7 +257,6 @@
   border: 1px #000 solid;
   margin-right: 15px;
   margin-top: 15px;
-  max-width: 200px;
 }
 
 .content .generic-item img {
@@ -271,21 +269,29 @@
 }
 
 .circleplaylist{
-  width: 198px;
-  height: 198px;
-  background-image: url("../images/youg.jpeg");
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
   border-radius: 100px;
-  background-size: cover;
 }
 
 .circleplaylist-2{
-  width: 198px;
-  height: 198px;
-  background-image: url("../images/einaudi.jpeg");
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
   border-radius: 100px;
-  background-size: cover;
+}
+
+.circleplaylist > img{
+  border-radius: 100%;
+}
+
+.circleplaylist-2 > img{
+  border-radius: 100%;
+}
+
+.h3-circ{
+  margin-top: 20px;
 }
 /* fine main */
 
@@ -305,19 +311,38 @@ footer {
   border: 1px #fff solid;
 }
 
-.mini > ul > li > img{
-  width: 15%;
-  height: auto;
+.img-player-left{
+  width: 20%;
 }
 
-.mini > ul {
-  display: flex;
-  justify-content: center;
+.img-player-left > img{
+  width: 100%;
+}
+
+.mini{
+  justify-content: space-around;
   align-items: center;
+  display: flex;
 }
 
-.mini > ul > li {
-  list-style: none;
+.options{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.option-fa{
+  margin-right: 15px;
+}
+
+.mini-fa{
+  margin-right: 15px;
+}
+
+.hr-volume{
+  background-color: #717171;
+  width: 120px;
+  height: 4px;
 }
 
 .player {
@@ -336,24 +361,6 @@ footer {
   list-style: none;
   font-size: 16px;
   padding: 10px;
-}
-
-.options > ul{
-  height: 90px;
-  line-height: 90px;
-  padding-left: 100px ;
-}
-
-.options > ul > li{
-  display: inline-block;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-
-.hr-volume{
-  background-color: #717171;
-  width: 120px;
-  height: 4px;
 }
 
 .player ul li.big {
@@ -407,6 +414,14 @@ footer {
   .content .generic-item {
     width: calc(100% / 4 - 15px);
   }
+
+  .mini, .options {
+    width: 25%;
+  }
+
+  .player {
+    width: 50%;
+  }
  }
 
 
@@ -414,6 +429,28 @@ footer {
  @media (max-width: 767px) {
    .content .generic-item {
      width: calc(100% / 2 - 15px);
+   }
+
+   .mini {
+     width: 24%;
+   }
+
+    .options {
+     width: 30%;
+   }
+
+   .player {
+     width: 46%;
+   }
+
+   .mini-fa{
+     margin-right: 0px;
+   }
+
+   .mini-txt{
+     font-size: 12px;
+     /* margin-left: 5px;
+     margin-right: 5px; */
    }
  }
 
@@ -424,5 +461,20 @@ footer {
     width: calc(100% / 2 - 15px);
   }
 
+  .mini {
+    width: 24%;
+  }
+
+   .options {
+    width: 35%;
+  }
+
+  .player {
+    width: 41%;
+  }
+
+  .option-fa{
+    margin-right: 0px;
+  }
 
 }
